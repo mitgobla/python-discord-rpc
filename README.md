@@ -4,7 +4,7 @@ Implementation of Discord's Rich Presence using Python. Based off of [Snazzah's 
 
 ## Requirements
 - A copy of Discord
-- Python 3.6.1+
+- Python 3.5.2+
 
 ## Installation
 
