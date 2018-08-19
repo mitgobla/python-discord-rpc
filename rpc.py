@@ -160,6 +160,7 @@ class DiscordIpcClient(metaclass=ABCMeta):
             activity_reduced = {}
             # Now remove all None values from the activity
             for key, value in activity_dict.items(): # Remove unnecessary data
+                activity_reduced[key] = activity_dict[key]
                 if isinstance(value, dict):
                     activity_reduced[key] = {k: v for k, v in activity_dict[key].items() if v}
                     if not activity_reduced[key]:
